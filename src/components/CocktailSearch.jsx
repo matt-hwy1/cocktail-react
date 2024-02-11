@@ -10,7 +10,9 @@ export const CocktailSearch = () => {
   return (
     <>
       <h1>Search for a cocktail recipe by name</h1>
-      <SearchInput setResults={ setCocktails } url={URLS.COCKTAIL_SEARCH_API_URL}/>
+      <SearchInput setResults={ setCocktails }
+                   url={URLS.COCKTAIL_SEARCH_API_URL}
+                   count_url={URLS.COCKTAIL_COUNT_API_URL} />
       <CocktailList cocktails={ cocktails } />
     </>
   )
