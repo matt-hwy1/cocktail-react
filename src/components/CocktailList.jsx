@@ -10,18 +10,20 @@ export const CocktailList = ({ cocktails, currentCount, totalCount, handlePrevio
       </div>
 
       <div>
-        <div className="pagination-controls">
+        <div className="pagination-section">
           <span className="page-details">
             Page { Math.ceil(currentCount / PAGE_SIZE) } of { Math.ceil(totalCount / PAGE_SIZE) }
           </span>
 
-          { currentCount < totalCount ?
-            <button className="page-next" onClick={ handleNext }>Next</button> : null
-          }
+          <div className="pagination-buttons">
+            { currentCount > PAGE_SIZE ?
+              <button className="page-previous" onClick={ handlePrevious }>Previous</button> : null
+            }
 
-          { currentCount > PAGE_SIZE ?
-            <button className="page-previous" onClick={ handlePrevious }>Previous</button> : null
-          }
+            { currentCount < totalCount ?
+              <button className="page-next" onClick={ handleNext }>Next</button> : null
+            }
+          </div>
         </div>
 
         <ul className="search-results">
