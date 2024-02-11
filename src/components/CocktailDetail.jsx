@@ -48,18 +48,18 @@ export const CocktailDetail = () => {
         </div>
         <div className="cocktail-item">
           <span className="heading">Instructions: </span>
-          <br/>
+          <br/><br/>
           <span className="value">{cocktail.instructions}</span>
         </div>
 
         <hr/>
         <h2>Ingredients</h2>
 
-        <div className="cocktail-ingredients">
+        <ul className="cocktail-ingredients">
           {cocktail.ingredients && cocktail.ingredients.map((ingredient, id) => {
             return <CocktailIngredient ingredient={ingredient} key={id} />;
           })}
-        </div>
+        </ul>
       </div>
     </>
   )

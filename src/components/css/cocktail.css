@@ -72,6 +72,6 @@
   white-space: pre-wrap;
 }
 
-/* * {
-  border: 1px solid red;
-} */
+.cocktail-ingredient {
+  margin-bottom: 10px;
+}
