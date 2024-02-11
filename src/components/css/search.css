@@ -8,11 +8,11 @@
 
 .search-input {
   width: 400px;
-  line-height: 2rem;
   font-size: 24px;
-  margin: 20px auto 20px 10px;
+  margin: 0 auto 20px 10px;
   border-radius: 4px;
   border: none;
+  vertical-align: top;
 }
 
 .search-input:focus {
