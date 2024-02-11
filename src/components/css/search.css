@@ -22,10 +22,32 @@
 .search-results {
   width: 500px;
   margin: auto;
-  max-height: 600px;
-  overflow-y: scroll;
+  max-height: 650px;
+  padding: 0;
 }
 
-* {
-  /* border: 1px solid black; */
+.pagination-controls {
+  width: 100%;
+  vertical-align: text-bottom;
+}
+
+.total-matches {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.page-previous {
+  font-size: 24px;
+  margin: 20px;
+  float: right;
+}
+
+.page-next {
+  font-size: 24px;
+  margin: 20px;
+  float: right;
+}
+
+.page-details {
+  margin-left: 20px;
 }
