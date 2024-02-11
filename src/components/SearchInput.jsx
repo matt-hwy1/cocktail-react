@@ -16,7 +16,7 @@ export const SearchInput = ({ setResults, url }) => {
   return (
     <div className="search">
       <FaSearch />
-      <input className="search-input" placeholder="Cocktail Name" onChange={handleChange} />
+      <input autoFocus className="search-input" placeholder="Cocktail Name" onChange={handleChange} />
     </div>
   )
 }
