@@ -1,11 +1,12 @@
 import './css/cocktail.css';
 import { useNavigate, useHistory } from "react-router-dom"
+import PATHS from '../constants/routing/Paths'
 
 export const CocktailSummary = ({ cocktail }) => {
   const navigate = useNavigate();
 
   function showCocktail(cocktail) {
-    navigate(`/cocktails/${cocktail.id}`, { cocktail })
+    navigate(PATHS.COCKTAIL_DETAIL_PATH.replace(':id', cocktail.id))
   }
 
   return (

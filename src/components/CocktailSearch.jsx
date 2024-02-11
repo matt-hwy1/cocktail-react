@@ -2,6 +2,7 @@ import { useState } from "react";
 import { SearchInput } from "./SearchInput";
 import { CocktailList } from "./CocktailList";
 import React from 'react';
+import URLS from '../constants/routing/Urls'
 
 export const CocktailSearch = () => {
   const [cocktails, setCocktails] = useState({})
@@ -9,7 +10,7 @@ export const CocktailSearch = () => {
   return (
     <>
       <h1>Search for a cocktail recipe by name</h1>
-      <SearchInput setResults={ setCocktails } url={'http://localhost:3000/api/search'}/>
+      <SearchInput setResults={ setCocktails } url={URLS.COCKTAIL_SEARCH_API_URL}/>
       <CocktailList cocktails={ cocktails } />
     </>
   )
