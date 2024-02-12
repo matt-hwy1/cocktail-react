@@ -1,10 +1,9 @@
-import { useNavigate, useHistory, useParams} from "react-router-dom"
+import { useParams} from "react-router-dom"
 import { useState, useEffect, useCallback } from "react";
 import URLS from '../constants/routing/Urls'
 import { CocktailIngredient } from "./CocktailIngredient"
 
 export const CocktailDetail = () => {
-  const navigate = useNavigate();
   const [cocktail, setCocktail] = useState({})
   const cocktailId = useParams().id
 

@@ -17,11 +17,11 @@ export const CocktailList = ({ cocktails, currentCount, totalCount, handlePrevio
 
           <div className="pagination-buttons">
             { currentCount > PAGE_SIZE ?
-              <button className="page-previous" onClick={ handlePrevious }>Previous</button> : null
+              <button className="page-previous" onClick={ handlePrevious }>&#x2190; Previous</button> : null
             }
 
             { currentCount < totalCount ?
-              <button className="page-next" onClick={ handleNext }>Next</button> : null
+              <button className="page-next" onClick={ handleNext }>Next &#x2192;</button> : null
             }
           </div>
         </div>

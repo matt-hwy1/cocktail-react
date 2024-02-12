@@ -65,5 +65,3 @@ export const CocktailSearch = () => {
     </>
   )
 }
-
-export default CocktailSearch;
