@@ -20,10 +20,13 @@ export const CocktailDetail = () => {
   }, []);
 
   useEffect(() => {
-    document.title = `Bartender: ${cocktail.name}`
+    if (cocktail != undefined) {
+      document.title = `Bartender: ${cocktail.name}`
+    }
   }, [cocktail])
 
   return (
+    cocktail == undefined ? <h1>Unknown Cocktail ID</h1> :
     cocktail.id != undefined &&
     <>
       <div className="cocktail-detail">
