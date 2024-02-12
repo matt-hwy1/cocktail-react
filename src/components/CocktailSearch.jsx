@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { SearchInput } from "./SearchInput";
 import { CocktailList } from "./CocktailList";
-import React from 'react';
-import URLS from '../constants/routing/Urls'
-import { PAGE_SIZE } from '../constants/Pagination'
+import React from "react";
+import URLS from "../constants/routing/Urls"
+import { PAGE_SIZE } from "../constants/Pagination"
 
 export const CocktailSearch = () => {
   const [query, setQuery] = useState("")

@@ -1,4 +1,4 @@
-import './css/cocktail.css';
+import "./css/cocktail.css";
 
 export const CocktailIngredient = ({ ingredient }) => {
   return (

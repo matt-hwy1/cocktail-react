@@ -1,14 +1,14 @@
-import { render, screen } from '@testing-library/react';
-import { CocktailDetail } from './components/CocktailDetail';
-import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
-import { rest } from 'msw';
-import { setupServer } from 'msw/node';
+import { render, screen } from "@testing-library/react";
+import { CocktailDetail } from "./components/CocktailDetail";
+import { MemoryRouter as Router, Routes, Route } from "react-router-dom";
+import { rest } from "msw";
+import { setupServer } from "msw/node";
 
 const server = setupServer(
-  rest.get('/api/data', (req, res, ctx) => {
+  rest.get("/api/data", (req, res, ctx) => {
     return res(
       ctx.status(200),
-      ctx.json({ data: 'Mocked response' })
+      ctx.json({ data: "Mocked response" })
     );
   }),
 );
@@ -16,8 +16,8 @@ const server = setupServer(
 beforeAll(() => server.listen());
 afterAll(() => server.close());
 
-test('renders the cocktail detail information', () => {
-  const cocktailId = '123';
+test("renders the cocktail detail information", () => {
+  const cocktailId = "123";
 
   render(
     <Router initialEntries={[`/cocktails/${cocktailId}`]}>
@@ -27,5 +27,5 @@ test('renders the cocktail detail information', () => {
     </Router>
   );
 
-  expect(screen.getByText(`Cocktail`)).toBeInTheDocument();
+  expect(screen.getByText("Cocktail")).toBeInTheDocument();
 });

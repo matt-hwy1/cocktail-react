@@ -1,4 +1,4 @@
-import { rest } from 'msw';
+import { rest } from "msw";
 const cocktailId = 123;
 
 export const handlers = [

@@ -1,9 +1,9 @@
-import './App.css';
-import React from 'react';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import { CocktailSearch } from './components/CocktailSearch';
+import "./App.css";
+import React from "react";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { CocktailSearch } from "./components/CocktailSearch";
 import { CocktailDetail } from "./components/CocktailDetail";
-import PATHS from './constants/routing/Paths'
+import PATHS from "./constants/routing/Paths"
 
 function App() {
   return (

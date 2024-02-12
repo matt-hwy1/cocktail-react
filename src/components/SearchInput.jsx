@@ -1,4 +1,4 @@
-import './css/search.css';
+import "./css/search.css";
 import { FaSearch } from "react-icons/fa";
 
 export const SearchInput = ({ setQuery }) => {

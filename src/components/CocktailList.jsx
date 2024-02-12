@@ -5,7 +5,7 @@ export const CocktailList = ({ cocktails, currentCount, totalCount, handlePrevio
   return (
     cocktails.length > 0 &&
     <>
-      <div class="total-matches">
+      <div className="total-matches">
         Total matches: { totalCount }
       </div>
 

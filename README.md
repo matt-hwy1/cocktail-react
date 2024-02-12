@@ -19,8 +19,8 @@ Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ## Enhancements I'd add, given time, in rough order of importance
-- More and better testing
-- Client side caching
+- More and better testing, and I'd probably incorporate Jest
+- Client side caching of Cocktail data
 - Breaking pagination out into a separate reusable component
 - Using an off the shelf autocomplete and pagination component instead of writing it from scratch
 - I'd have the "Back to Search" link in the Cocktail detail page link to the specific search query and pagination page
